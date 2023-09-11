@@ -23,12 +23,8 @@ opencv4.6
 官方提供的dll是opencv3.4.16编的，如果opencv版本一致，可直接下载官方提供的fastdeploy-win-x64-1.0.7 ([C++SDK Release版本](https://github.com/PaddlePaddle/FastDeploy/blob/develop/docs/cn/build_and_install/download_prebuilt_libraries.md))，不用编译。
 
 笔者此处使用opencv4.6重新编译：
-
-![](readme.assets/cmake-gui_HY6xZCVb2U.png)
-
-![cmake-gui_uKqmW6uxkk](readme.assets/cmake-gui_uKqmW6uxkk.png)
-
-需要注意的是，此库只支持release编译，CMAKE_CONFIG_TYPES应只选择release。然后更换OPENCV_DIRECTORY即可。
+需要注意的是，此库只支持release编译，CMAKE_CONFIG_TYPES应只选择release。
+然后OPENCV_DIRECTORY更换至opencv460路径即可。
 
 注意：如果用自编译的dll进行lib二次开发，需要用release，即.pro文件中添加:
 
